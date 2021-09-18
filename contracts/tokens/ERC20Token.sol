@@ -31,7 +31,7 @@ contract ERC20Token is Ownable, ERC20Burnable, ERC20Pausable, ERC1820Implementer
     * {IERC20-balanceOf} and {IERC20-transfer}.
     */
   function decimals() public view virtual override returns (uint8) {
-      return _decimals;
+      return _decimals; 
   }
 
     /**
@@ -52,4 +52,4 @@ contract ERC20Token is Ownable, ERC20Burnable, ERC20Pausable, ERC1820Implementer
   ) internal override(ERC20Pausable, ERC20) {
     ERC20Pausable._beforeTokenTransfer(from, to, amount);
   }
-}
+} 
